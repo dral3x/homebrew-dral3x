@@ -8,8 +8,12 @@ class Stringslint < Formula
   depends_on :xcode => ["14.0", :build]
   depends_on :xcode => "10.2"
 
+  uses_from_macos "swift"
+
   def install
-    system "make", "prefix_install", "PREFIX=#{prefix}", "TEMPORARY_FOLDER=#{buildpath}/StringsLint.dst"
+    system "swift", "build", "--disable-sandbox", "--configuration", "release", "--product", "stringslint"
+    bin.install ".build/release/stringslint"
+    generate_completions_from_executable(bin/"stringslint", "--generate-completion-script")
   end
 
   test do
