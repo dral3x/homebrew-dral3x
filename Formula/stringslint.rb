@@ -3,7 +3,7 @@ class Stringslint < Formula
   homepage "https://github.com/dral3x/StringsLint"
   url "https://github.com/dral3x/StringsLint.git",
       :tag      => "0.1.2",
-      :revision => "3db6f480e80a49382cc71ca46433f547ee4e8fb6"
+      :revision => "cd785fe1099549167227785c0f8f893e843db97f"
 
   depends_on :xcode => ["14.0", :build]
   depends_on :xcode => "10.2"
