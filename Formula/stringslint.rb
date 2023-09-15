@@ -13,7 +13,6 @@ class Stringslint < Formula
   def install
     system "swift", "build", "--disable-sandbox", "--configuration", "release", "--product", "stringslint"
     bin.install ".build/release/stringslint"
-    generate_completions_from_executable(bin/"stringslint", "--generate-completion-script")
   end
 
   test do
