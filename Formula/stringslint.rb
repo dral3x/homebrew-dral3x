@@ -2,8 +2,8 @@ class Stringslint < Formula
   desc "Ensure localized strings are complete and never unused"
   homepage "https://github.com/dral3x/StringsLint"
   url "https://github.com/dral3x/StringsLint.git",
-      :tag      => "0.1.3",
-      :revision => "8002cbddb114479f8b4b7b0734c0318bc0272a44"
+      :tag      => "0.1.4",
+      :revision => "8002cbddb114479f8b4b7b0734c0318bc0272a4405050f72afa49113bc6c8dacfd73e11a5bd88899"
 
   depends_on :xcode => ["14.0", :build]
   depends_on :xcode => "10.2"
